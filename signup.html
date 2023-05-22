@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+        <script src="./app.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="wrapper navbar">
+            <a href="#" class="logo"><img src="./assets/images/logo-resized.png" alt="CrytoWave Logo" width="200"
+                    height="50"></a>
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./markets.html">Markets</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+
+                </ul>
+            </nav>
+
+            <a href="./login.html"> <button class="right-button">Login / Sign Up</button>
+            </div>
+    </header>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1 class="title-register">Register Here</h1>
+
+                <div class="names">
+                <input type="text" id = "firstname" placeholder="First Name" required>
+                <input type="text" id = "lastname" placeholder="Last Name" required>
+            </div>
+                
+                <input type="email" placeholder="Email" required/>
+                <input type="password" placeholder="Password" required/>
+                <input type="password" placeholder="Confirm Password" required/>
+
+                <span>or use your Google Account</span>
+
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <button class="register-btn">Register</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Hello friend!</h1>
+                    <p>Login to your account</p>
+                    <button class="ghost" id="signIn">Login</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Welcome Back!</h1>
+                    <p>Already Having an Account? <br>Login Now!</p>
+                    <a href="./login.html"> <button class="ghost" id="signUp">Login In</button></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
