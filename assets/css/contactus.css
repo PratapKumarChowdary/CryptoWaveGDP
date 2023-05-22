@@ -1,0 +1,226 @@
+:root{
+    --primary-color: #7E00FD;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+p,a{
+    font-size: 1.8rem;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 2.6em;
+}
+
+.header-cta, .arrow{
+    display: none;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 80px; */
+
+}
+
+.logo{
+    margin-left: 100px;
+}
+
+
+header ul{
+    display: flex;
+    gap: 2.2em;
+}
+
+header ul li a{
+    color: black;
+  
+    transition: 0.2s;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+a.active{
+    text-decoration: underline;
+}
+
+header ul li a:hover{
+    color: white;
+    background-color: #7E00FD;
+}
+
+.right-button{
+    margin-right: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    background: rgb(74, 29, 209);
+      color: #fff;
+      overflow: hidden;
+      box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+      cursor: pointer;
+}
+
+.right-button:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #7E00FD;
+}
+
+ footer{
+    background-color: #EDEDED;
+    padding: 1.6em 0;
+    margin-top: 5em;
+    display: flex;
+
+}
+
+.footer-header> h3{
+    text-align: center;
+    font-size: 30px;
+    padding-left: 450px;
+
+
+}
+
+.footer-header> p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: -10px;
+    padding-left: 450px;
+
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding-left: 450px;
+
+    
+}
+
+.cs-page_title{
+    text-align: center;
+    font-size: 50px;
+}
+
+.cs-contact_card_wrap {
+    /* background: linear-gradient(116.85deg, rgba(252, 70, 107, 0.3) 0%, rgba(63, 94, 251, 0.3) 100%); */
+    padding: 1px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+      }
+  
+  .cs-contact_card {
+    background-color: #fff;
+    border-radius: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px;
+    position: relative;
+  }
+  
+  .cs-contact_card > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  
+  .cs-contact_card .cs-contact_info {
+    padding: 15px 10px;
+    position: relative;
+  }
+  
+  .cs-contact_card .cs-contact_info:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    right: 0;
+    top: 0;
+    background: linear-gradient(116.85deg, rgba(252, 70, 107, 0.3) 0%, rgba(63, 94, 251, 0.3) 100%);
+  }
+  
+  .cs-contact_card .cs-contact_icon {
+    margin-bottom: 25px;
+  }
+  
+  .cs-contact_card .cs-contact_title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .cs-contact_card .cs-contact_text {
+    margin: 0;
+    color: rgba(115, 122, 153, 0.5);
+  }
+
+
+  .cs-form_field_wrap {
+    /* background: linear-gradient(116.85deg, rgba(252, 70, 107, 0.3) 0%, rgba(63, 94, 251, 0.3) 100%); */
+    border-radius: 1.6em;
+    padding: 1px;
+    
+  }
+  
+  .cs-form_field {
+    background-color: #f8fafc;
+    width: 50%;
+    border: none;
+    padding: 12px 20px;
+    border-radius: inherit;
+    outline: none;
+    display: block;
+    gap: 3.5em;
+  }
+  
+  .cs-form_field.cs-white_bg {
+    background-color: #fff;
+  }
+  
+  .cs-form_label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    color: #050023;
+  }
+  
+  .cs-contact_box {
+    background: #FFFFFF;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 70px 80px 80px;
+  }
+  
+  
