@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <script src="./app.js"></script>
+
+</head>
+
+<body>
+  <!--  -->
+  <div class="small-nav">
+    <!-- Navbar -->
+    <div class="relative w-full p-2">
+      <div class="flex justify-between-between items-center w-full">
+        <div class="w-full">
+          <a href="/" class="logo"><img src="./assets/images/logo-resized.png" alt="CrytoWave Logo" width="200"
+              height="50"></a>
+        </div>
+        <div aria-label="burger-menu">
+          <button id="menu" aria-label="open menu" onclick="sidebarHandler(true)" class="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="36" height="36"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Mobile responsive sidebar-->
+    <div class="mob-nav" id="mobile-nav">
+      <div class="mob-nav2" onclick="sidebarHandler(false)"></div>
+      <div class="mob-nav3">
+        <div class="mob-nav4">
+          <div class="mob-nav5">
+            <div>
+              <div class="mob-nav6">
+                <div>
+                  <a href="./index.html" class="logo"><img src="./assets/images/logo-resized.png" alt="CrytoWave Logo"
+                      width="200" height="50"></a>
+                </div>
+                <div class="flex w-full items-end justify-end">
+                  <div class="flex items-center justify-end w-full">
+                    <div id="cross" aria-label="close menu"
+                      class="focus:outline-none focus:ring-2 rounded-md text-gray-800" onclick="sidebarHandler(false)">
+                      <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero_5_Svg3.svg" alt="cross" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div aria-label="li-main" class="flex items-center gap4 flex-col">
+                <div aria-label="nav-list" class="w-ul">
+                  <ul class="flex gap5 w-full flex-col">
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./markets.html">Markets</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <header>
+    <div class="wrapper navbar responsive">
+      <a href="#" class="logo"><img src="./assets/images/logo-resized.png" alt="CrytoWave Logo" width="200"
+          height="50"></a>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./markets.html">Markets</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+          <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <a href="./login.html"> <button class="right-button">Login / Sign Up</button>
+      </a>
+    </div>
+  </header>
+
+  <div class="container" id="container">
+
+    <div class="form-container sign-in-container">
+      <form id="user-register">
+        <h1 class="title-register">Register Here</h1>
+
+        <div class="names">
+          <input type="text" onkeydown="return /[a-z]/i.test(event.key)" id="firstname" placeholder="First Name"
+            required>
+          <input type="text" onkeydown="return /[a-z]/i.test(event.key)" id="lastname" placeholder="Last Name" required>
+        </div>
+
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password1" placeholder="Password" onkeydown="{
+                  const a = document.getElementById('password1').value.length
+                  // if(a < 8){
+                  //   document.getElementById('pss').innerHTML = 'Password should be atleat 8 Characters'
+                  //   setTimeout(() => { document.getElementById('pss').innerHTML = ''},5000)  
+                  // }
+                  if(a > 8 ){
+                    document.getElementById('pss').innerHTML = 'Weak Password'
+                    setTimeout(() => { document.getElementById('pss').innerHTML = ''},5000)
+                  }
+                  if(a > 9){
+                    document.getElementById('pss').innerHTML = 'Medium Password'
+                    setTimeout(() => { document.getElementById('pss').innerHTML = ''},5000)
+          
+                  }
+                  if(a > 10){
+                    document.getElementById('pss').innerHTML = 'Strong Password'
+                    setTimeout(() => { document.getElementById('pss').innerHTML = ''},5000)
+                  }
+                }" required />
+        <p style="font-size: 12px; margin-top: 5px; color: darkcyan;">Atleast one digit, one special character, and be
+          8-16 characters long.</p>
+
+        <input type="password" id="password2" placeholder="Confirm Password" required />
+        <p style="color: green;" id="pss"></p>
+        <p id="message" style="font-size: 15px; margin-top: 5px; color: red;"></p>
+        <!-- <span>or use your Google Account</span> 
+
+              <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              </div> -->
+        <button type="submit" class="register-btn">Register</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Hello friend!</h1>
+          <p>Login to your account</p>
+          <button class="ghost" id="signIn">Login</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Welcome Back!</h1>
+          <p>Already Having an Account? <br>Login Now!</p>
+          <a href="./login.html"> <button class="ghost" id="signUp">Login In</button></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/register.js"></script>
+  <script>
+    // Nav
+    let sideBar = document.getElementById("mobile-nav");
+    let menu = document.getElementById("menu");
+    let cross = document.getElementById("cross");
+    const sidebarHandler = (check) => {
+      if (check) {
+        sideBar.style.transform = "translateX(0px)";
+        menu.classList.add("hidden");
+        cross.classList.remove("hidden");
+      } else {
+        sideBar.style.transform = "translateX(-100%)";
+        menu.classList.remove("hidden");
+        cross.classList.add("hidden");
+      }
+    };
+  </script>
+</body>
+
+</html>

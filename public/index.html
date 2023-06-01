@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoWave - Effective Investment Management</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <!--  -->
+  <div class="small-nav">
+    <!-- Navbar -->
+    <div class="relative w-full p-2">
+      <div class="flex justify-between-between items-center w-full">
+        <div class="w-full">
+          <a href="/" class="logo"><img src="./assets/images/logo-resized.png" alt="CrytoWave Logo" width="200"
+              height="50"></a>
+        </div>
+        <div aria-label="burger-menu">
+          <button id="menu" aria-label="open menu" onclick="sidebarHandler(true)" class="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="36" height="36"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Mobile responsive sidebar-->
+    <div class="mob-nav" id="mobile-nav">
+      <div class="mob-nav2" onclick="sidebarHandler(false)"></div>
+      <div class="mob-nav3">
+        <div class="mob-nav4">
+          <div class="mob-nav5">
+            <div>
+              <div class="mob-nav6">
+                <div>
+                  <a href="/" class="logo"><img src="./assets/images/logo-resized.png" alt="CrytoWave Logo" width="200"
+                      height="50"></a>
+                </div>
+                <div class="flex w-full items-end justify-end">
+                  <div class="flex items-center justify-end w-full">
+                    <div id="cross" aria-label="close menu"
+                      class="focus:outline-none focus:ring-2 rounded-md text-gray-800" onclick="sidebarHandler(false)">
+                      <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero_5_Svg3.svg" alt="cross" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div aria-label="li-main" class="flex items-center gap4 flex-col">
+                <div aria-label="nav-list" class="w-ul">
+                  <ul class="flex gap5 w-full flex-col">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="./markets.html">Markets</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <header>
+    <div class="wrapper navbar responsive">
+      <a href="#" class="logo"><img src="./assets/images/logo-resized.png" alt="CrytoWave Logo" width="200"
+          height="50"></a>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./markets.html">Markets</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+          <li><a href="./contactus.html">Contact Us</a></li>
+
+        </ul>
+      </nav>
+      <!-- <a href="#"><button class="right-button" onclick="logout()">Logout</button></a> -->
+
+      <a href="./login.html"> <button class="right-button">Login / Sign Up</button>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrapper hero-content animate__animated animate__fadeInDown speed">
+      <div class="left-col active">
+        <h1>Harnessing the Power of AI for <span>Smarter</span> Investments</h1>
+        <p class="subhead">Leveraging Deep learning to make informed investment decisions in real-time</p>
+
+        <div class="cta-btns">
+          <div class="icon-text">
+            <a href="./signup.html" class="jus"><i class="fa fa-user-plus fa-fade jus"></i>Join Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="right-col">
+        <img src="./assets/images/PMT_M523_03.webp" alt="" class="hero-header" width="600" height="480">
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="features">
+    <div class="wrapper">
+      <ul class="animate__animated animate__fadeInUp speed">
+        <li>
+          <strong>
+            <img src="./assets/images/trend.png" alt="">
+            <span>Accurate Price Predictions</span>
+          </strong>
+          <p>Harness the power of advanced machine learning algorithms to generate accurate price predictions
+            for cryptocurrencies. Make informed investment decisions based on reliable forecasts, maximizing
+            your returns in the dynamic world of digital assets.</p>
+        </li>
+        <li>
+          <strong>
+            <img src="./assets/images/intelligence.png" alt="">
+            <span>Intelligent Investment Recommendations</span>
+          </strong>
+          <p>Unlock intelligent investment recommendations powered by cutting-edge algorithms. Leverage
+            comprehensive market analysis and historical data to receive personalized investment suggestions
+            tailored to your risk profile, maximizing your potential for profitable returns.</p>
+        </li>
+        <li>
+          <strong>
+            <img src="./assets/images/data-analytics.png" alt="">
+            <span>Real-time Market Insights</span>
+          </strong>
+          <p>Stay ahead of the curve with real-time market insights. Access up-to-date information, trends,
+            and news to make informed investment decisions and navigate the cryptocurrency market with
+            confidence.</p>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="coins-area">
+      <div class="container">
+        <div class="coins-title">
+          <span class="sub-title">Included Coins</span>
+        </div>
+        <div class="row">
+          <div class="coin-wrap">
+            <ul class="animate__animated animate__fadeInUp speed">
+              <li><img src="assets/images/Bitcoin.webp" alt="" width="64" height="64"></li>
+              <li><img src="assets/images/BNB.webp" alt="" width="64" height="64"></li>
+              <li><img src="assets/images/Cardano.webp" alt="" width="64" height="64"></li>
+              <li><img src="assets/images/Dogecoin.webp" alt="" width="64" height="64"></li>
+              <li><img src="assets/images/Ethereum_Classic.webp" alt="" width="64" height="64"></li>
+              <li><img src="assets/images/Shiba_Inu.webp" alt="" width="64" height="64"></li>
+              <li><img src="assets/images/Solana.webp" alt="" width="64" height="64"></li>
+              <li><img src="assets/images/Theter.webp" alt="" width="64" height="64"></li>
+              <li><img src="assets/images/Tron.webp" alt="" width="64" height="64"></li>
+              <li><img src="assets/images/Wazirx.webp" alt="" width="64" height="64"></li>
+              <li><img src="assets/images/XRP.webp" alt="" width="64" height="64"></li>
+              <li><img src="assets/images/Polygon.webp" alt="" width="64" height="64"></li>
+
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="footer-header">
+        <h3>CryptoWave</h3>
+        <p>Effective Investment Management</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy;2023 CryptoWave</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav
+    let sideBar = document.getElementById("mobile-nav");
+    let menu = document.getElementById("menu");
+    let cross = document.getElementById("cross");
+    const sidebarHandler = (check) => {
+      if (check) {
+        sideBar.style.transform = "translateX(0px)";
+        menu.classList.add("hidden");
+        cross.classList.remove("hidden");
+      } else {
+        sideBar.style.transform = "translateX(-100%)";
+        menu.classList.remove("hidden");
+        cross.classList.add("hidden");
+      }
+    };
+  </script>
+</body>
+
+</html>

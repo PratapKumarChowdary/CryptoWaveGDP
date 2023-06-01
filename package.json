@@ -1,0 +1,18 @@
+{
+  "name": "cryptwave---project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.3",
+    "validator": "^13.7.0"
+  }
+}

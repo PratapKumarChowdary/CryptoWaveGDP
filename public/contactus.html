@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
+  <link rel="stylesheet" href="./assets/css/contactus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+  <!--  -->
+  <div class="small-nav">
+    <!-- Navbar -->
+    <div class="relative w-full p-2">
+      <div class="flex justify-between-between items-center w-full">
+        <div class="w-full">
+          <a href="/" class="logo"><img src="./assets/images/logo-resized.png" alt="CrytoWave Logo" width="200"
+              height="50"></a>
+        </div>
+        <div aria-label="burger-menu">
+          <button id="menu" aria-label="open menu" onclick="sidebarHandler(true)" class="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="36" height="36"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Mobile responsive sidebar-->
+    <div class="mob-nav" id="mobile-nav">
+      <div class="mob-nav2" onclick="sidebarHandler(false)"></div>
+      <div class="mob-nav3">
+        <div class="mob-nav4">
+          <div class="mob-nav5">
+            <div>
+              <div class="mob-nav6">
+                <div>
+                  <a href="/" class="logo"><img src="./assets/images/logo-resized.png" alt="CrytoWave Logo" width="200"
+                      height="50"></a>
+                </div>
+                <div class="flex w-full items-end justify-end">
+                  <div class="flex items-center justify-end w-full">
+                    <div id="cross" aria-label="close menu"
+                      class="focus:outline-none focus:ring-2 rounded-md text-gray-800" onclick="sidebarHandler(false)">
+                      <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero_5_Svg3.svg" alt="cross" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div aria-label="li-main" class="flex items-center gap4 flex-col">
+                <div aria-label="nav-list" class="w-ul">
+                  <ul class="flex gap5 w-full flex-col">
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./markets.html">Markets</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <header>
+    <div class="wrapper navbar responsive">
+      <a href="#" class="logo"><img src="./assets/images/logo-resized.png" alt="CrytoWave Logo" width="200"
+          height="50"></a>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./markets.html">Markets</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+          <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- <a href="#"><button class="right-button" onclick="logout()">Logout</button></a> -->
+
+      <a href="./login.html"> <button class="right-button">Login / Sign Up</button>
+      </a>
+    </div>
+  </header>
+
+
+  <section class="cs-page_head cs-bg" data-src="assets/img/page_head_bg.svg">
+    <div class="container animate__animated animate__fadeInUp speed">
+      <div class="text-center">
+        <h1 class="cs-page_title">Contact</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="cs-contact_card_wrap">
+                <div class="cs-contact_card">
+                  <div class="cs-contact_info shadow text-center">
+                    <div class="cs-contact_icon">
+                      <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1448_14685)">
+                          <path
+                            d="M16.7113 22.6393C20.4669 26.4044 24.8179 29.9986 26.5422 28.2759C29.0074 25.8059 30.5274 23.6637 35.9646 28.0305C41.4018 32.3974 37.2249 35.3107 34.8373 37.6984C32.0823 40.4534 21.8128 37.8424 11.6573 27.6917C1.50177 17.5409 -1.10439 7.26986 1.65061 4.51169C4.04461 2.12878 6.95002 -2.04172 11.3169 3.38594C15.6837 8.81361 13.5383 10.3368 11.0746 12.8004C9.35194 14.5326 12.9461 18.882 16.7113 22.6393Z"
+                            fill="url(#paint0_linear_1448_14685)" />
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_1448_14685" x1="38.6309" y1="0.724609" x2="-6.93527"
+                            y2="23.7985" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#FC466B" />
+                            <stop offset="1" stop-color="#3F5EFB" />
+                          </linearGradient>
+                          <clipPath id="clip0_1448_14685">
+                            <rect width="38" height="38" fill="white" transform="matrix(-1 0 0 1 38.623 0.726074)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+
+                    <h3 class="cs-contact_title">Phone</h3>
+                    <p class="cs-contact_text">+1 (903) 208-8240</p>
+                  </div>
+                  <div class="cs-contact_info shadow text-center">
+                    <div class="cs-contact_icon">
+                      <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M35.8288 14.9442V29.2259C35.8288 30.9676 34.4038 32.3926 32.6621 32.3926H7.32878C5.58711 32.3926 4.16211 30.9676 4.16211 29.2259V10.2259C4.16211 8.48424 5.58711 7.05924 7.32878 7.05924H23.3204C23.2254 7.56591 23.1621 8.10424 23.1621 8.64258C23.1621 10.9859 24.1913 13.0601 25.8063 14.5167L19.9954 18.1426L7.32878 10.2259V13.3926L19.9954 21.3092L28.3871 16.0526C29.2421 16.3692 30.1288 16.5592 31.0788 16.5592C32.8679 16.5592 34.4988 15.9417 35.8288 14.9442ZM26.3288 8.64258C26.3288 11.2709 28.4504 13.3926 31.0788 13.3926C33.7071 13.3926 35.8288 11.2709 35.8288 8.64258C35.8288 6.01424 33.7071 3.89258 31.0788 3.89258C28.4504 3.89258 26.3288 6.01424 26.3288 8.64258Z"
+                          fill="url(#paint0_linear_1448_14689)" />
+                        <defs>
+                          <linearGradient id="paint0_linear_1448_14689" x1="4.16211" y1="3.89258" x2="40.3952"
+                            y2="24.2752" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#FC466B" />
+                            <stop offset="1" stop-color="#3F5EFB" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h3 class="cs-contact_title">Email</h3>
+                    <p class="cs-contact_text">example@example.com</p>
+                  </div>
+                  <div class="cs-contact_info shadow text-center">
+                    <div class="cs-contact_icon">
+                      <svg width="41" height="39" viewBox="0 0 41 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M20.5552 0.543945C29.1928 0.543945 36.1943 7.54547 36.1943 16.1831C36.1943 22.7916 31.5507 29.9937 22.3837 37.8662C21.874 38.304 21.2241 38.5445 20.5522 38.5439C19.8802 38.5434 19.2307 38.3017 18.7218 37.863L18.1155 37.3368C9.35433 29.6697 4.91602 22.6441 4.91602 16.1831C4.91602 7.54547 11.9175 0.543945 20.5552 0.543945ZM20.5552 10.168C18.9599 10.168 17.4299 10.8018 16.3019 11.9298C15.1738 13.0578 14.5401 14.5878 14.5401 16.1831C14.5401 17.7784 15.1738 19.3083 16.3019 20.4364C17.4299 21.5644 18.9599 22.1982 20.5552 22.1982C22.1505 22.1982 23.6804 21.5644 24.8085 20.4364C25.9365 19.3083 26.5702 17.7784 26.5702 16.1831C26.5702 14.5878 25.9365 13.0578 24.8085 11.9298C23.6804 10.8018 22.1505 10.168 20.5552 10.168Z"
+                          fill="url(#paint0_linear_1448_14701)" />
+                        <defs>
+                          <linearGradient id="paint0_linear_1448_14701" x1="4.91602" y1="0.543945" x2="45.0587"
+                            y2="17.2727" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#FC466B" />
+                            <stop offset="1" stop-color="#3F5EFB" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h3 class="cs-contact_title">Location</h3>
+                    <p class="cs-contact_text">800 Drive, Maryville - 64468</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 
+        <div class="cs-contact_box">
+          <div class="cs-section_heading cs-style4">
+            <h2 class="cs-section_title">Drop Us Your Message</h2>
+            <p class="cs-section_subtitle">Freely contact with us anytime. We're available here for you.</p>
+          </div>
+          <div class="cs-height_45 cs-height_lg_45"></div>
+          <form class="cs-contact_form">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="cs-form_field_wrap">
+                  <input type="text" class="cs-form_field" placeholder="Full Name">
+                </div>
+                <div class="cs-height_20 cs-height_lg_20"></div>
+              </div>
+              <div class="col-lg-6">
+                <div class="cs-form_field_wrap">
+                  <input type="text" class="cs-form_field" placeholder="Your Email">
+                </div>
+                <div class="cs-height_20 cs-height_lg_20"></div>
+              </div>
+              <div class="col-lg-12">
+                <div class="cs-form_field_wrap">
+                  <input type="text" class="cs-form_field" placeholder="Wright Subject">
+                </div>
+                <div class="cs-height_20 cs-height_lg_20"></div>
+              </div>
+              <div class="col-lg-12">
+                <div class="cs-form_field_wrap">
+                  <textarea cols="30" rows="5" placeholder="Message..." class="cs-form_field"></textarea>
+                </div>
+                <div class="cs-height_20 cs-height_lg_20"></div>
+              </div>
+              <div class="col-lg-12">
+                <button class="cs-btn cs-style1 cs-btn_lg"><span>Send Message</span></button>
+              </div>
+            </div>
+          </form>
+        </div> -->
+  </section>
+
+
+  <footer>
+    <div class="wrapper">
+      <div class="footer-header">
+        <h3>CryptoWave</h3>
+        <p>Effective Investment Management</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy;2023 CryptoWave</p>
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="js/logout.js"></script> -->
+
+  <script>
+    // Nav
+    let sideBar = document.getElementById("mobile-nav");
+    let menu = document.getElementById("menu");
+    let cross = document.getElementById("cross");
+    const sidebarHandler = (check) => {
+      if (check) {
+        sideBar.style.transform = "translateX(0px)";
+        menu.classList.add("hidden");
+        cross.classList.remove("hidden");
+      } else {
+        sideBar.style.transform = "translateX(-100%)";
+        menu.classList.remove("hidden");
+        cross.classList.add("hidden");
+      }
+    };
+  </script>
+</body>
+
+</html>
