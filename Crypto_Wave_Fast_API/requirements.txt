@@ -1,0 +1,11 @@
+yfinance==0.2.31
+tensorboard==2.14.1
+uvicorn==0.24.0.post1
+PyJWT==2.8.0
+pymongo==4.5.0
+python-dotenv==1.0.0
+plotly==5.18.0
+pydantic==2.4.2
+passlib==1.7.4
+python-dateutil==2.8.2
+fastapi==0.104.1

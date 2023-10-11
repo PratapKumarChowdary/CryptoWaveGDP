@@ -1,0 +1,2 @@
+# Crypto Wave Fast API
+
